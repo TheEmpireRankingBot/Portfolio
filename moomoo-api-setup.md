@@ -1,43 +1,43 @@
 # Moomoo API Skills Setup
 
-## Skills Installed (Global)
-
 Source: [MoomooOpen/moomoo-agent-hub](https://github.com/MoomooOpen/moomoo-agent-hub)
 
-| Skill | Name | Description |
-|-------|------|-------------|
-| `install-opend` | OpenD Installation Assistant | Auto-downloads and installs moomoo/Futu OpenD and upgrades Python SDK. Supports Windows, macOS, Linux. |
-| `moomooapi` | Market Data & Trading Assistant | Query quotes, K-lines, order book, options; place/cancel/modify orders; manage accounts and positions. |
+## Skills Installed (Global `~/.claude/skills/`)
 
-Installed to: `~/.claude/skills/`
+| Skill | Description | Status |
+|-------|-------------|--------|
+| `install-opend` | OpenD Installation Assistant — auto-downloads and installs moomoo OpenD + Python SDK. Supports Windows, macOS, Ubuntu, CentOS. | ✅ Installed |
+| `moomooapi` | Market Data & Trading Assistant — quotes, K-lines, order book, options chain, place/cancel/modify orders, account & positions. Includes 57 Python scripts. | ✅ Installed |
 
-## Python SDK Installed
+> **Note:** Content Skills (News Search, Stock Briefing, Sentiment Gauge) referenced in the README at `anthropics/futu-agent-hub` are not yet publicly available (repo returns 404 as of April 2026).
 
-| Package | Version |
-|---------|---------|
-| moomoo-api | 10.3.6308 |
-| backtrader | 1.9.78.123 |
-| matplotlib | 3.10.8 |
-| pandas | 3.0.2 |
-| numpy | 2.4.4 |
+## Python Packages Installed
 
-## moomoo OpenD
+| Package | Version | Purpose |
+|---------|---------|---------|
+| moomoo-api | 10.3.6308 | Moomoo OpenAPI Python SDK |
+| backtrader | 1.9.78.123 | Strategy backtesting framework |
+| matplotlib | 3.10.8 | Chart plotting |
+| pandas | 3.0.2 | Data analysis |
+| numpy | 2.4.4 | Numerical computation |
 
-moomoo OpenD is a desktop GUI application that must be installed on your **local machine**.
+## moomoo OpenD (Manual Step Required)
+
+moomoo OpenD is a desktop GUI application — it must be installed on your **local machine**, not this server.
 
 **Download:** https://www.moomoo.com/download/OpenAPI
 
-**Setup steps:**
-1. Download the GUI version for your OS (`moomoo_OpenD`, with underscore)
+**Steps:**
+1. Download the GUI version for your OS (`moomoo_OpenD`, with underscore — not `moomooOpenD`)
 2. Install and launch it
-3. Log in with your moomoo account
-4. Confirm API port is `11111` (default)
+3. Log in with your moomoo account (complete questionnaire assessment on first login)
+4. Confirm API port is `11111` and listen address is `127.0.0.1`
 
-**Invoke the install skill:** `/install-opend mm`
+**Or let the skill handle it** — run `/install-opend mm` in Claude Code to auto-install.
 
 ## Usage
 
-Once OpenD is running, use `/moomooapi` in Claude Code to query market data or execute trades.
+Once OpenD is running locally:
 
 ```python
 from moomoo import *
@@ -48,4 +48,7 @@ if ret == RET_OK:
 quote_ctx.close()
 ```
 
+Use `/moomooapi` in Claude Code to query market data or execute trades in natural language.
+
 **API Docs:** https://openapi.moomoo.com/moomoo-api-doc/en/intro/intro.html
+**Permission Guide:** https://openapi.futunn.com/futu-api-doc/intro/authority.html
