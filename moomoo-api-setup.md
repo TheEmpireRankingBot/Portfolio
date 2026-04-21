@@ -13,6 +13,8 @@ Source: [MoomooOpen/moomoo-agent-hub](https://github.com/MoomooOpen/moomoo-agent
 
 ## Python Packages Installed
 
+Installed in virtualenv at `/opt/moomoo-venv` (system pip has a broken setuptools; use `/opt/moomoo-venv/bin/python` for moomoo scripts).
+
 | Package | Version | Purpose |
 |---------|---------|---------|
 | moomoo-api | 10.3.6308 | Moomoo OpenAPI Python SDK |
