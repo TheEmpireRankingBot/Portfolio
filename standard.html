@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Strata — The Open Floor</title>
+    <meta
+      name="description"
+      content="Browse projects from independent developers seeking sponsorship and small-ticket capital."
+    />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/standard.css" />
+  </head>
+  <body>
+    <header class="nav" role="banner">
+      <div class="wrap nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo__dot" aria-hidden="true"></span>
+          Strata
+        </a>
+        <nav class="nav__links" aria-label="Primary">
+          <a class="nav__link" href="#browse">Browse</a>
+          <a class="nav__link" href="#how">How it works</a>
+          <a class="nav__link" href="#submit">Submit a project</a>
+          <a class="nav__link" href="private.html">Private</a>
+        </nav>
+        <div class="nav__cta">
+          <a class="btn btn--ghost btn--small" href="#">Sign in</a>
+          <a class="btn btn--primary btn--small" href="#">Sponsor</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="wrap hero">
+        <span class="hero__eyebrow">
+          <span class="hero__pulse" aria-hidden="true"></span>
+          14 new projects this week
+        </span>
+        <h1 class="hero__title">
+          Where indie work<br />meets <em>willing</em> capital.
+        </h1>
+        <p class="hero__lede">
+          The Open Floor connects developers building real things with patrons
+          who want to back them. Browse projects, sponsor at any tier, and watch
+          traction move in public.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#browse">Browse projects</a>
+          <a class="btn btn--ghost" href="#submit">Submit yours →</a>
+        </div>
+
+        <div class="stats" aria-label="Platform statistics">
+          <div>
+            <div class="stat__num">$2.4M</div>
+            <div class="stat__label">DEPLOYED IN 2025</div>
+          </div>
+          <div>
+            <div class="stat__num">312</div>
+            <div class="stat__label">PROJECTS FUNDED</div>
+          </div>
+          <div>
+            <div class="stat__num">4,180</div>
+            <div class="stat__label">ACTIVE SPONSORS</div>
+          </div>
+          <div>
+            <div class="stat__num">96%</div>
+            <div class="stat__label">SHIPPED ON TIME</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap section" id="browse">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Featured projects</h2>
+            <p class="section__sub">Hand-reviewed each Monday.</p>
+          </div>
+          <a class="btn btn--ghost btn--small" href="#">View all</a>
+        </div>
+
+        <div class="chips" role="tablist" aria-label="Filter by category">
+          <button class="chip" role="tab" aria-pressed="true">All</button>
+          <button class="chip" role="tab" aria-pressed="false">Developer tools</button>
+          <button class="chip" role="tab" aria-pressed="false">Open source</button>
+          <button class="chip" role="tab" aria-pressed="false">AI & ML</button>
+          <button class="chip" role="tab" aria-pressed="false">Hardware</button>
+          <button class="chip" role="tab" aria-pressed="false">Climate</button>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="card__row">
+              <div style="display:flex;gap:12px;align-items:center;min-width:0;">
+                <div class="card__avatar" aria-hidden="true">MA</div>
+                <div class="card__meta">
+                  <h3 class="card__title">Marrow</h3>
+                  <span class="card__sub">by Aria Patel</span>
+                </div>
+              </div>
+              <span class="card__tag">DEV TOOLS</span>
+            </div>
+            <p class="card__desc">
+              A local-first changelog generator that reads your git history and
+              writes release notes humans actually want to read.
+            </p>
+            <div class="card__metrics">
+              <div>
+                <div class="metric__val">$8.2k</div>
+                <div class="metric__lab">RAISED</div>
+              </div>
+              <div>
+                <div class="metric__val">142</div>
+                <div class="metric__lab">SPONSORS</div>
+              </div>
+              <div>
+                <div class="metric__val">31d</div>
+                <div class="metric__lab">LEFT</div>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress__bar"><div class="progress__fill" style="width:82%"></div></div>
+              <div class="progress__caption">
+                <span>82% of $10,000</span>
+                <span>Goal</span>
+              </div>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--small" href="#">Sponsor</a>
+              <a class="btn btn--ghost btn--small" href="#">Details</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__row">
+              <div style="display:flex;gap:12px;align-items:center;min-width:0;">
+                <div class="card__avatar" aria-hidden="true">QU</div>
+                <div class="card__meta">
+                  <h3 class="card__title">Quiver</h3>
+                  <span class="card__sub">by Linus Tarrant</span>
+                </div>
+              </div>
+              <span class="card__tag">OPEN SOURCE</span>
+            </div>
+            <p class="card__desc">
+              A keyboard-first arrow library for SVG diagrams. Tiny runtime,
+              respectable defaults, used in 600+ public repos.
+            </p>
+            <div class="card__metrics">
+              <div><div class="metric__val">$3.6k</div><div class="metric__lab">RAISED</div></div>
+              <div><div class="metric__val">88</div><div class="metric__lab">SPONSORS</div></div>
+              <div><div class="metric__val">12d</div><div class="metric__lab">LEFT</div></div>
+            </div>
+            <div class="progress">
+              <div class="progress__bar"><div class="progress__fill" style="width:48%"></div></div>
+              <div class="progress__caption">
+                <span>48% of $7,500</span>
+                <span>Goal</span>
+              </div>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--small" href="#">Sponsor</a>
+              <a class="btn btn--ghost btn--small" href="#">Details</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__row">
+              <div style="display:flex;gap:12px;align-items:center;min-width:0;">
+                <div class="card__avatar" aria-hidden="true">FI</div>
+                <div class="card__meta">
+                  <h3 class="card__title">Fieldlight</h3>
+                  <span class="card__sub">by Noor Adekunle</span>
+                </div>
+              </div>
+              <span class="card__tag">CLIMATE</span>
+            </div>
+            <p class="card__desc">
+              Open hardware soil moisture sensors for smallholder farms. Ships
+              with a Pi-friendly SDK and is field-tested in Lagos and Nairobi.
+            </p>
+            <div class="card__metrics">
+              <div><div class="metric__val">$14.1k</div><div class="metric__lab">RAISED</div></div>
+              <div><div class="metric__val">203</div><div class="metric__lab">SPONSORS</div></div>
+              <div><div class="metric__val">6d</div><div class="metric__lab">LEFT</div></div>
+            </div>
+            <div class="progress">
+              <div class="progress__bar"><div class="progress__fill" style="width:94%"></div></div>
+              <div class="progress__caption">
+                <span>94% of $15,000</span>
+                <span>Goal</span>
+              </div>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--small" href="#">Sponsor</a>
+              <a class="btn btn--ghost btn--small" href="#">Details</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__row">
+              <div style="display:flex;gap:12px;align-items:center;min-width:0;">
+                <div class="card__avatar" aria-hidden="true">EM</div>
+                <div class="card__meta">
+                  <h3 class="card__title">Ember</h3>
+                  <span class="card__sub">by Mei-Lin Chen</span>
+                </div>
+              </div>
+              <span class="card__tag">AI & ML</span>
+            </div>
+            <p class="card__desc">
+              A fine-tuning playground for small language models on consumer
+              GPUs. Cleaner UX than running scripts; reproducible by design.
+            </p>
+            <div class="card__metrics">
+              <div><div class="metric__val">$5.0k</div><div class="metric__lab">RAISED</div></div>
+              <div><div class="metric__val">117</div><div class="metric__lab">SPONSORS</div></div>
+              <div><div class="metric__val">22d</div><div class="metric__lab">LEFT</div></div>
+            </div>
+            <div class="progress">
+              <div class="progress__bar"><div class="progress__fill" style="width:25%"></div></div>
+              <div class="progress__caption">
+                <span>25% of $20,000</span>
+                <span>Goal</span>
+              </div>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--small" href="#">Sponsor</a>
+              <a class="btn btn--ghost btn--small" href="#">Details</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__row">
+              <div style="display:flex;gap:12px;align-items:center;min-width:0;">
+                <div class="card__avatar" aria-hidden="true">PL</div>
+                <div class="card__meta">
+                  <h3 class="card__title">Plume</h3>
+                  <span class="card__sub">by Soren Ek</span>
+                </div>
+              </div>
+              <span class="card__tag">DEV TOOLS</span>
+            </div>
+            <p class="card__desc">
+              A minimal observability stack for solo founders. SQLite-backed,
+              hostable on a $5 VPS, no Datadog bill at the end of the month.
+            </p>
+            <div class="card__metrics">
+              <div><div class="metric__val">$11.8k</div><div class="metric__lab">RAISED</div></div>
+              <div><div class="metric__val">266</div><div class="metric__lab">SPONSORS</div></div>
+              <div><div class="metric__val">18d</div><div class="metric__lab">LEFT</div></div>
+            </div>
+            <div class="progress">
+              <div class="progress__bar"><div class="progress__fill" style="width:74%"></div></div>
+              <div class="progress__caption">
+                <span>74% of $16,000</span>
+                <span>Goal</span>
+              </div>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--small" href="#">Sponsor</a>
+              <a class="btn btn--ghost btn--small" href="#">Details</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__row">
+              <div style="display:flex;gap:12px;align-items:center;min-width:0;">
+                <div class="card__avatar" aria-hidden="true">VE</div>
+                <div class="card__meta">
+                  <h3 class="card__title">Verge</h3>
+                  <span class="card__sub">by Tomás Velázquez</span>
+                </div>
+              </div>
+              <span class="card__tag">HARDWARE</span>
+            </div>
+            <p class="card__desc">
+              A pocket-sized e-ink reader for technical PDFs. Sponsorship funds
+              the production tooling run for the first 500 units.
+            </p>
+            <div class="card__metrics">
+              <div><div class="metric__val">$22.4k</div><div class="metric__lab">RAISED</div></div>
+              <div><div class="metric__val">412</div><div class="metric__lab">SPONSORS</div></div>
+              <div><div class="metric__val">41d</div><div class="metric__lab">LEFT</div></div>
+            </div>
+            <div class="progress">
+              <div class="progress__bar"><div class="progress__fill" style="width:56%"></div></div>
+              <div class="progress__caption">
+                <span>56% of $40,000</span>
+                <span>Goal</span>
+              </div>
+            </div>
+            <div class="card__actions">
+              <a class="btn btn--primary btn--small" href="#">Sponsor</a>
+              <a class="btn btn--ghost btn--small" href="#">Details</a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="cta-strip" id="submit">
+          <h3 class="cta-strip__title">Building something? Put it on the floor.</h3>
+          <p class="cta-strip__sub">
+            Hand-reviewed in 48 hours. No equity, no take rate above 3%, no
+            opaque algorithms deciding who gets seen.
+          </p>
+          <div class="cta-strip__actions">
+            <a class="btn btn--on-dark" href="#">Submit a project</a>
+            <a class="btn btn--ghost-dark" href="#">Read the guidelines →</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="wrap foot">
+      <div>© 2026 Strata · Singapore</div>
+      <div class="foot__links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="private.html">Private office →</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
