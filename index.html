@@ -3,71 +3,94 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>DevVentures — Capital for Roblox creators</title>
+    <title>DevVentures — A publication for capital and Roblox creators</title>
     <meta
       name="description"
-      content="A two-tier platform connecting Roblox developers with the capital and patrons who back them. Choose between the open floor or the reserve."
+      content="DevVentures pairs Roblox creators with the capital and patrons who back them. Two rooms — one open, one by invitation."
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..600,30..100&family=Instrument+Serif:ital@0;1&display=swap"
+    />
+
     <link rel="stylesheet" href="assets/css/tokens.css" />
     <link rel="stylesheet" href="assets/css/gateway.css" />
   </head>
   <body class="gateway">
-    <nav class="gateway__nav" aria-label="Primary">
-      <a href="/" class="gateway__wordmark">DevVentures<span>since 2024</span></a>
-      <a href="#" class="gateway__signin">Sign in</a>
-    </nav>
+    <header class="masthead" role="banner">
+      <div class="masthead__l">Vol. II · No. 12 · May 18 · 2026</div>
+      <div class="masthead__c">DevVentures</div>
+      <div class="masthead__r"><a href="#" class="masthead__signin">Sign in</a></div>
+    </header>
 
-    <main class="gateway__main">
-      <div class="gateway__hero">
-        <span class="gateway__eyebrow">Capital for the people building on Roblox</span>
-        <h1 class="gateway__title">
+    <main>
+      <section class="front">
+        <span class="front__kicker">A publication for those building &amp; backing on Roblox</span>
+        <h1 class="front__title">
           Two rooms.<br />One <em>conviction</em>.
         </h1>
-        <p class="gateway__lede">
-          DevVentures pairs Roblox creators with the capital that fits them.
-          Open the floor for community sponsorship at any ticket size, or step
-          into the Reserve for curated allocations into vetted studios.
+        <p class="front__lede">
+          We pair the people building experiences on Roblox with the patrons,
+          angels, and small funds who want to back them. Step inside whichever
+          room suits the size of your conviction.
         </p>
+      </section>
 
-        <div class="gateway__cards">
-          <a href="standard.html" class="gateway__card gateway__card--standard">
-            <span class="gateway__card__tag">The Open Floor</span>
-            <h2 class="gateway__card__title">
-              Sponsor and ship Roblox projects, openly.
+      <section class="spread" aria-label="Choose your room">
+        <a href="standard.html" class="feature feature--floor">
+          <div>
+            <div class="feature__sect">
+              <span class="feature__num">I.</span>
+              <span>The Open Floor</span>
+            </div>
+            <h2 class="feature__title">
+              Sponsor and ship Roblox projects, <em>openly</em>.
             </h2>
-            <p class="gateway__card__desc">
-              For solo devs, UGC creators, and patrons who want to back the
-              games and items they love. Public goals, transparent traction,
-              tickets from $5 up.
-            </p>
-            <span class="gateway__card__cta">
-              Enter the floor
-              <span class="gateway__card__arrow" aria-hidden="true">→</span>
-            </span>
-          </a>
+          </div>
+          <p class="feature__byline">— for solo devs, UGC creators, weekend angels.</p>
+          <p class="feature__body">
+            Public goals. Tickets from $5. Transparent traction. A floor where a
+            twelve-dollar pledge sits next to a five-hundred-dollar one, and
+            both move the bar.
+          </p>
+          <span class="feature__cta">
+            Enter the floor
+            <span class="feature__cta__arrow" aria-hidden="true">↗</span>
+          </span>
+          <span class="feature__sig" aria-hidden="true">№ 01</span>
+        </a>
 
-          <a href="private.html" class="gateway__card gateway__card--private">
-            <span class="gateway__card__tag">DevVentures Reserve</span>
-            <h2 class="gateway__card__title">
-              The Reserve. By invitation.
+        <a href="private.html" class="feature feature--reserve feature--right">
+          <div>
+            <div class="feature__sect">
+              <span class="feature__num">II.</span>
+              <span>The Reserve</span>
+            </div>
+            <h2 class="feature__title">
+              A quieter room, <em>by invitation</em>.
             </h2>
-            <p class="gateway__card__desc">
-              A curated room for serious backers — angels, small funds, and
-              accredited patrons writing $500 to $25k tickets into vetted Roblox
-              studios. Operator-led diligence. Discreet.
-            </p>
-            <span class="gateway__card__cta">
-              Request access
-              <span class="gateway__card__arrow" aria-hidden="true">→</span>
-            </span>
-          </a>
-        </div>
-      </div>
+          </div>
+          <p class="feature__byline">— for accredited backers writing serious tickets.</p>
+          <p class="feature__body">
+            Ten games per quarter. Operator-led diligence. Allocations from
+            $500 to $25,000. Names are kept. Sponsorships are not announced.
+          </p>
+          <span class="feature__cta">
+            Request access
+            <span class="feature__cta__arrow" aria-hidden="true">↗</span>
+          </span>
+          <span class="feature__sig" aria-hidden="true">№ 02</span>
+        </a>
+      </section>
     </main>
 
-    <footer class="gateway__foot">
-      DevVentures is a sponsorship platform, not an investment adviser. Read the
-      <a href="#">disclosures</a>.
+    <footer class="colophon">
+      <div class="colophon__l">Singapore · 2026</div>
+      <div class="colophon__c">a publication, of sorts.</div>
+      <div class="colophon__r"><a href="#">Disclosures</a></div>
     </footer>
   </body>
 </html>

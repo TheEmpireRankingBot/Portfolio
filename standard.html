@@ -3,69 +3,84 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>DevVentures — The Open Floor</title>
+    <title>DevVentures · The Open Floor</title>
     <meta
       name="description"
-      content="Browse Roblox developers seeking sponsorship for their games, UGC items, and tools. Back the work you love at any ticket size."
+      content="The Open Floor — sponsor Roblox developers building games, UGC, and plugins. Pledge from $5. Transparent traction."
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..700&family=Fraunces:opsz,wght,SOFT@9..144,400..600,30..100&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+
     <link rel="stylesheet" href="assets/css/tokens.css" />
     <link rel="stylesheet" href="assets/css/standard.css" />
   </head>
   <body>
-    <header class="nav" role="banner">
-      <div class="wrap nav__inner">
-        <a href="index.html" class="nav__logo">
-          <span class="nav__logo__dot" aria-hidden="true"></span>
+    <header role="banner">
+      <div class="wrap bar">
+        <a href="index.html" class="bar__logo">
+          <span class="bar__logo__rule" aria-hidden="true"></span>
           DevVentures
+          <span class="bar__logo__small">/ the floor</span>
         </a>
-        <nav class="nav__links" aria-label="Primary">
-          <a class="nav__link" href="#browse">Browse</a>
-          <a class="nav__link" href="#how">How it works</a>
-          <a class="nav__link" href="#submit">Submit a project</a>
-          <a class="nav__link" href="private.html">Reserve</a>
+        <nav class="bar__nav" aria-label="Primary">
+          <a href="#browse">Browse</a>
+          <a href="#how">How it works</a>
+          <a href="#submit">Submit</a>
+          <a href="private.html">Reserve</a>
         </nav>
-        <div class="nav__cta">
-          <a class="btn btn--ghost btn--small" href="#">Sign in</a>
-          <a class="btn btn--primary btn--small" href="#">Sponsor</a>
+        <div class="bar__cta">
+          <a class="btn btn--sm" href="#">Sign in</a>
+          <a class="btn btn--sm btn--solid" href="#">Sponsor</a>
         </div>
       </div>
     </header>
 
     <main>
       <section class="wrap hero">
-        <span class="hero__eyebrow">
-          <span class="hero__pulse" aria-hidden="true"></span>
-          22 new Roblox projects this week
-        </span>
-        <h1 class="hero__title">
-          Where Roblox creators<br />meet <em>willing</em> capital.
-        </h1>
-        <p class="hero__lede">
-          The Open Floor connects developers building games, UGC items, and
-          plugins on Roblox with patrons who want to back them. Pledge from $5,
-          watch traction move in public.
-        </p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#browse">Browse projects</a>
-          <a class="btn btn--ghost" href="#submit">Submit yours →</a>
+        <div class="hero__main">
+          <span class="hero__kicker">
+            <span class="hero__kicker__dot" aria-hidden="true"></span>
+            Issue 12 · 22 new this week
+          </span>
+          <h1 class="hero__title">
+            Back the<br />games you<br /><em>actually</em> play.
+          </h1>
         </div>
+        <aside class="hero__aside">
+          <p class="hero__lede">
+            The Open Floor pairs Roblox developers with patrons who want to back
+            them — <em>openly</em>. Pledge from five dollars, watch the goal
+            move in public, and feel like you helped ship something.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#browse">Browse projects</a>
+            <a class="btn" href="#submit">Submit yours</a>
+          </div>
+        </aside>
+      </section>
 
-        <div class="stats" aria-label="Platform statistics">
-          <div>
-            <div class="stat__num">$284k</div>
-            <div class="stat__label">DEPLOYED IN 2025</div>
+      <section class="wrap">
+        <div class="ticker" aria-label="Platform numbers">
+          <div class="ticker__cell">
+            <div class="ticker__num">$<em>284</em>k</div>
+            <div class="ticker__lab">Deployed · '25</div>
           </div>
-          <div>
-            <div class="stat__num">416</div>
-            <div class="stat__label">PROJECTS FUNDED</div>
+          <div class="ticker__cell">
+            <div class="ticker__num"><em>416</em></div>
+            <div class="ticker__lab">Projects funded</div>
           </div>
-          <div>
-            <div class="stat__num">6,210</div>
-            <div class="stat__label">ACTIVE SPONSORS</div>
+          <div class="ticker__cell">
+            <div class="ticker__num"><em>6,210</em></div>
+            <div class="ticker__lab">Active sponsors</div>
           </div>
-          <div>
-            <div class="stat__num">92%</div>
-            <div class="stat__label">SHIPPED ON TIME</div>
+          <div class="ticker__cell">
+            <div class="ticker__num"><em>92</em>%</div>
+            <div class="ticker__lab">Shipped on time</div>
           </div>
         </div>
       </section>
@@ -73,10 +88,11 @@
       <section class="wrap section" id="browse">
         <div class="section__head">
           <div>
-            <h2 class="section__title">Featured projects</h2>
-            <p class="section__sub">Hand-reviewed every Monday.</p>
+            <div class="section__num">№ 01</div>
+            <h2 class="section__title">Featured <em>lots</em>, this week.</h2>
+            <p class="section__sub">— hand-reviewed every Monday.</p>
           </div>
-          <a class="btn btn--ghost btn--small" href="#">View all</a>
+          <a class="btn btn--sm" href="#">View all</a>
         </div>
 
         <div class="chips" role="tablist" aria-label="Filter by category">
@@ -88,232 +104,221 @@
           <button class="chip" role="tab" aria-pressed="false">Plugins</button>
         </div>
 
-        <div class="grid">
-          <article class="card">
-            <div class="card__row">
-              <div style="display:flex;gap:12px;align-items:center;min-width:0;">
-                <div class="card__avatar" aria-hidden="true">TV</div>
-                <div class="card__meta">
-                  <h3 class="card__title">Tower Vanguard</h3>
-                  <span class="card__sub">by Aria Patel</span>
-                </div>
-              </div>
-              <span class="card__tag">TOWER DEFENCE</span>
+        <div class="lots">
+          <article class="lot">
+            <span class="lot__sector">Tower defence</span>
+            <div class="lot__serial">
+              <span class="lot__serial__no">LOT № 0142</span>
+              <span>2026 · MAY</span>
             </div>
-            <p class="card__desc">
-              A co-op tower defence with a hand-drawn art direction. Sponsorship
-              funds the modeller and a month of paid playtesting.
+            <div>
+              <h3 class="lot__title">Tower Vanguard</h3>
+              <p class="lot__by">— by Aria Patel</p>
+            </div>
+            <p class="lot__desc">
+              A co-op tower defence with a hand-drawn art direction.
+              Sponsorship funds the modeller and a month of paid playtesting.
             </p>
-            <div class="card__metrics">
-              <div>
-                <div class="metric__val">$820</div>
-                <div class="metric__lab">RAISED</div>
-              </div>
-              <div>
-                <div class="metric__val">142</div>
-                <div class="metric__lab">SPONSORS</div>
-              </div>
-              <div>
-                <div class="metric__val">31d</div>
-                <div class="metric__lab">LEFT</div>
+            <div class="lot__nums">
+              <div><div class="lot__nums__val">$820</div><div class="lot__nums__lab">Raised</div></div>
+              <div><div class="lot__nums__val">142</div><div class="lot__nums__lab">Sponsors</div></div>
+              <div><div class="lot__nums__val">31d</div><div class="lot__nums__lab">Left</div></div>
+            </div>
+            <div class="lot__progress">
+              <div class="lot__bar"><div class="lot__bar__fill" style="width:82%"></div></div>
+              <div class="lot__bar__cap">
+                <span>$820 / $1,000</span>
+                <em>82%</em>
               </div>
             </div>
-            <div class="progress">
-              <div class="progress__bar"><div class="progress__fill" style="width:82%"></div></div>
-              <div class="progress__caption">
-                <span>82% of $1,000</span>
-                <span>Goal</span>
-              </div>
-            </div>
-            <div class="card__actions">
-              <a class="btn btn--primary btn--small" href="#">Sponsor</a>
-              <a class="btn btn--ghost btn--small" href="#">Details</a>
+            <div class="lot__act">
+              <a class="btn btn--sm btn--solid" href="#">Sponsor</a>
+              <a class="btn btn--sm btn--link" href="#">Read brief →</a>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card__row">
-              <div style="display:flex;gap:12px;align-items:center;min-width:0;">
-                <div class="card__avatar" aria-hidden="true">QU</div>
-                <div class="card__meta">
-                  <h3 class="card__title">Quiver</h3>
-                  <span class="card__sub">by Linus Tarrant</span>
-                </div>
-              </div>
-              <span class="card__tag">PLUGIN</span>
+          <article class="lot">
+            <span class="lot__sector lot__sector--blue">Plugin</span>
+            <div class="lot__serial">
+              <span class="lot__serial__no">LOT № 0143</span>
+              <span>2026 · MAY</span>
             </div>
-            <p class="card__desc">
-              A keyboard-first Studio plugin for building arrows and waypoint
-              chains. Already used in 90+ open-source places.
+            <div>
+              <h3 class="lot__title">Quiver</h3>
+              <p class="lot__by">— by Linus Tarrant</p>
+            </div>
+            <p class="lot__desc">
+              A keyboard-first Studio plugin for arrows and waypoint chains.
+              Already used in ninety-plus open-source places.
             </p>
-            <div class="card__metrics">
-              <div><div class="metric__val">$360</div><div class="metric__lab">RAISED</div></div>
-              <div><div class="metric__val">88</div><div class="metric__lab">SPONSORS</div></div>
-              <div><div class="metric__val">12d</div><div class="metric__lab">LEFT</div></div>
+            <div class="lot__nums">
+              <div><div class="lot__nums__val">$360</div><div class="lot__nums__lab">Raised</div></div>
+              <div><div class="lot__nums__val">88</div><div class="lot__nums__lab">Sponsors</div></div>
+              <div><div class="lot__nums__val">12d</div><div class="lot__nums__lab">Left</div></div>
             </div>
-            <div class="progress">
-              <div class="progress__bar"><div class="progress__fill" style="width:48%"></div></div>
-              <div class="progress__caption">
-                <span>48% of $750</span>
-                <span>Goal</span>
+            <div class="lot__progress">
+              <div class="lot__bar"><div class="lot__bar__fill" style="width:48%"></div></div>
+              <div class="lot__bar__cap">
+                <span>$360 / $750</span>
+                <em>48%</em>
               </div>
             </div>
-            <div class="card__actions">
-              <a class="btn btn--primary btn--small" href="#">Sponsor</a>
-              <a class="btn btn--ghost btn--small" href="#">Details</a>
+            <div class="lot__act">
+              <a class="btn btn--sm btn--solid" href="#">Sponsor</a>
+              <a class="btn btn--sm btn--link" href="#">Read brief →</a>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card__row">
-              <div style="display:flex;gap:12px;align-items:center;min-width:0;">
-                <div class="card__avatar" aria-hidden="true">GT</div>
-                <div class="card__meta">
-                  <h3 class="card__title">Glacier Trial</h3>
-                  <span class="card__sub">by Noor Adekunle</span>
-                </div>
-              </div>
-              <span class="card__tag">ADVENTURE</span>
+          <article class="lot">
+            <span class="lot__sector">Adventure</span>
+            <div class="lot__serial">
+              <span class="lot__serial__no">LOT № 0144</span>
+              <span>2026 · MAY</span>
             </div>
-            <p class="card__desc">
+            <div>
+              <h3 class="lot__title">Glacier Trial</h3>
+              <p class="lot__by">— by Noor Adekunle</p>
+            </div>
+            <p class="lot__desc">
               A snowy survival adventure with a Norse-inspired world. Funding
               covers the soundtrack and the final boss encounter.
             </p>
-            <div class="card__metrics">
-              <div><div class="metric__val">$1,410</div><div class="metric__lab">RAISED</div></div>
-              <div><div class="metric__val">203</div><div class="metric__lab">SPONSORS</div></div>
-              <div><div class="metric__val">6d</div><div class="metric__lab">LEFT</div></div>
+            <div class="lot__nums">
+              <div><div class="lot__nums__val">$1,410</div><div class="lot__nums__lab">Raised</div></div>
+              <div><div class="lot__nums__val">203</div><div class="lot__nums__lab">Sponsors</div></div>
+              <div><div class="lot__nums__val">6d</div><div class="lot__nums__lab">Left</div></div>
             </div>
-            <div class="progress">
-              <div class="progress__bar"><div class="progress__fill" style="width:94%"></div></div>
-              <div class="progress__caption">
-                <span>94% of $1,500</span>
-                <span>Goal</span>
+            <div class="lot__progress">
+              <div class="lot__bar"><div class="lot__bar__fill" style="width:94%"></div></div>
+              <div class="lot__bar__cap">
+                <span>$1,410 / $1,500</span>
+                <em>94%</em>
               </div>
             </div>
-            <div class="card__actions">
-              <a class="btn btn--primary btn--small" href="#">Sponsor</a>
-              <a class="btn btn--ghost btn--small" href="#">Details</a>
+            <div class="lot__act">
+              <a class="btn btn--sm btn--solid" href="#">Sponsor</a>
+              <a class="btn btn--sm btn--link" href="#">Read brief →</a>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card__row">
-              <div style="display:flex;gap:12px;align-items:center;min-width:0;">
-                <div class="card__avatar" aria-hidden="true">AS</div>
-                <div class="card__meta">
-                  <h3 class="card__title">Avatar Stylist</h3>
-                  <span class="card__sub">by Mei-Lin Chen</span>
-                </div>
-              </div>
-              <span class="card__tag">UGC</span>
+          <article class="lot">
+            <span class="lot__sector lot__sector--blue">UGC</span>
+            <div class="lot__serial">
+              <span class="lot__serial__no">LOT № 0145</span>
+              <span>2026 · MAY</span>
             </div>
-            <p class="card__desc">
-              A capsule of 24 hand-modelled avatar items in a unified palette.
-              Sponsorship funds the textures and upload fees.
+            <div>
+              <h3 class="lot__title">Avatar Stylist</h3>
+              <p class="lot__by">— by Mei-Lin Chen</p>
+            </div>
+            <p class="lot__desc">
+              A capsule of twenty-four hand-modelled avatar items in a unified
+              palette. Sponsorship funds the textures and upload fees.
             </p>
-            <div class="card__metrics">
-              <div><div class="metric__val">$500</div><div class="metric__lab">RAISED</div></div>
-              <div><div class="metric__val">117</div><div class="metric__lab">SPONSORS</div></div>
-              <div><div class="metric__val">22d</div><div class="metric__lab">LEFT</div></div>
+            <div class="lot__nums">
+              <div><div class="lot__nums__val">$500</div><div class="lot__nums__lab">Raised</div></div>
+              <div><div class="lot__nums__val">117</div><div class="lot__nums__lab">Sponsors</div></div>
+              <div><div class="lot__nums__val">22d</div><div class="lot__nums__lab">Left</div></div>
             </div>
-            <div class="progress">
-              <div class="progress__bar"><div class="progress__fill" style="width:25%"></div></div>
-              <div class="progress__caption">
-                <span>25% of $2,000</span>
-                <span>Goal</span>
+            <div class="lot__progress">
+              <div class="lot__bar"><div class="lot__bar__fill" style="width:25%"></div></div>
+              <div class="lot__bar__cap">
+                <span>$500 / $2,000</span>
+                <em>25%</em>
               </div>
             </div>
-            <div class="card__actions">
-              <a class="btn btn--primary btn--small" href="#">Sponsor</a>
-              <a class="btn btn--ghost btn--small" href="#">Details</a>
+            <div class="lot__act">
+              <a class="btn btn--sm btn--solid" href="#">Sponsor</a>
+              <a class="btn btn--sm btn--link" href="#">Read brief →</a>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card__row">
-              <div style="display:flex;gap:12px;align-items:center;min-width:0;">
-                <div class="card__avatar" aria-hidden="true">PL</div>
-                <div class="card__meta">
-                  <h3 class="card__title">Plume Analytics</h3>
-                  <span class="card__sub">by Soren Ek</span>
-                </div>
-              </div>
-              <span class="card__tag">PLUGIN</span>
+          <article class="lot">
+            <span class="lot__sector lot__sector--blue">Plugin</span>
+            <div class="lot__serial">
+              <span class="lot__serial__no">LOT № 0146</span>
+              <span>2026 · MAY</span>
             </div>
-            <p class="card__desc">
-              A lightweight in-Studio analytics dashboard for indie devs. Track
-              D1, D7, and session length without a third-party service.
+            <div>
+              <h3 class="lot__title">Plume Analytics</h3>
+              <p class="lot__by">— by Soren Ek</p>
+            </div>
+            <p class="lot__desc">
+              A lightweight in-Studio analytics dashboard for indie devs.
+              Tracks D1, D7, and session length without a third-party service.
             </p>
-            <div class="card__metrics">
-              <div><div class="metric__val">$1,180</div><div class="metric__lab">RAISED</div></div>
-              <div><div class="metric__val">266</div><div class="metric__lab">SPONSORS</div></div>
-              <div><div class="metric__val">18d</div><div class="metric__lab">LEFT</div></div>
+            <div class="lot__nums">
+              <div><div class="lot__nums__val">$1,180</div><div class="lot__nums__lab">Raised</div></div>
+              <div><div class="lot__nums__val">266</div><div class="lot__nums__lab">Sponsors</div></div>
+              <div><div class="lot__nums__val">18d</div><div class="lot__nums__lab">Left</div></div>
             </div>
-            <div class="progress">
-              <div class="progress__bar"><div class="progress__fill" style="width:74%"></div></div>
-              <div class="progress__caption">
-                <span>74% of $1,600</span>
-                <span>Goal</span>
+            <div class="lot__progress">
+              <div class="lot__bar"><div class="lot__bar__fill" style="width:74%"></div></div>
+              <div class="lot__bar__cap">
+                <span>$1,180 / $1,600</span>
+                <em>74%</em>
               </div>
             </div>
-            <div class="card__actions">
-              <a class="btn btn--primary btn--small" href="#">Sponsor</a>
-              <a class="btn btn--ghost btn--small" href="#">Details</a>
+            <div class="lot__act">
+              <a class="btn btn--sm btn--solid" href="#">Sponsor</a>
+              <a class="btn btn--sm btn--link" href="#">Read brief →</a>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card__row">
-              <div style="display:flex;gap:12px;align-items:center;min-width:0;">
-                <div class="card__avatar" aria-hidden="true">PP</div>
-                <div class="card__meta">
-                  <h3 class="card__title">Pixel Pirates</h3>
-                  <span class="card__sub">by Tomás Velázquez</span>
-                </div>
-              </div>
-              <span class="card__tag">SIMULATOR</span>
+          <article class="lot">
+            <span class="lot__sector">Simulator</span>
+            <div class="lot__serial">
+              <span class="lot__serial__no">LOT № 0147</span>
+              <span>2026 · MAY</span>
             </div>
-            <p class="card__desc">
-              A retro naval-combat sim with a low-poly ocean. Sponsorship funds
-              the multiplayer netcode rewrite for the 1.0 launch.
+            <div>
+              <h3 class="lot__title">Pixel Pirates</h3>
+              <p class="lot__by">— by Tomás Velázquez</p>
+            </div>
+            <p class="lot__desc">
+              A retro naval-combat sim with a low-poly ocean. Sponsorship
+              funds the multiplayer netcode rewrite for the 1.0 launch.
             </p>
-            <div class="card__metrics">
-              <div><div class="metric__val">$2,240</div><div class="metric__lab">RAISED</div></div>
-              <div><div class="metric__val">412</div><div class="metric__lab">SPONSORS</div></div>
-              <div><div class="metric__val">41d</div><div class="metric__lab">LEFT</div></div>
+            <div class="lot__nums">
+              <div><div class="lot__nums__val">$2,240</div><div class="lot__nums__lab">Raised</div></div>
+              <div><div class="lot__nums__val">412</div><div class="lot__nums__lab">Sponsors</div></div>
+              <div><div class="lot__nums__val">41d</div><div class="lot__nums__lab">Left</div></div>
             </div>
-            <div class="progress">
-              <div class="progress__bar"><div class="progress__fill" style="width:56%"></div></div>
-              <div class="progress__caption">
-                <span>56% of $4,000</span>
-                <span>Goal</span>
+            <div class="lot__progress">
+              <div class="lot__bar"><div class="lot__bar__fill" style="width:56%"></div></div>
+              <div class="lot__bar__cap">
+                <span>$2,240 / $4,000</span>
+                <em>56%</em>
               </div>
             </div>
-            <div class="card__actions">
-              <a class="btn btn--primary btn--small" href="#">Sponsor</a>
-              <a class="btn btn--ghost btn--small" href="#">Details</a>
+            <div class="lot__act">
+              <a class="btn btn--sm btn--solid" href="#">Sponsor</a>
+              <a class="btn btn--sm btn--link" href="#">Read brief →</a>
             </div>
           </article>
         </div>
 
-        <aside class="cta-strip" id="submit">
-          <h3 class="cta-strip__title">Building on Roblox? Put your project on the floor.</h3>
-          <p class="cta-strip__sub">
-            Hand-reviewed in 48 hours. No equity, no take rate above 3%, no
-            opaque algorithms deciding who gets seen.
+        <aside class="pitch" id="submit">
+          <span class="pitch__kicker">For builders</span>
+          <h3 class="pitch__title">
+            Building on Roblox?<br />Put your project <em>on the floor</em>.
+          </h3>
+          <p class="pitch__lede">
+            Hand-reviewed in forty-eight hours. No equity. No take rate above
+            three percent. No opaque algorithms deciding who gets seen.
           </p>
-          <div class="cta-strip__actions">
-            <a class="btn btn--on-dark" href="#">Submit a project</a>
-            <a class="btn btn--ghost-dark" href="#">Read the guidelines →</a>
+          <div class="pitch__act">
+            <a class="btn btn--ondark" href="#">Submit a project</a>
+            <a class="btn btn--ghostdark" href="#">Guidelines</a>
           </div>
         </aside>
       </section>
     </main>
 
     <footer class="wrap foot">
-      <div>© 2026 DevVentures</div>
-      <div class="foot__links">
+      <div class="foot__l">DevVentures · 2026</div>
+      <div class="foot__c">printed, more or less.</div>
+      <div class="foot__r">
         <a href="#">Terms</a>
         <a href="#">Privacy</a>
         <a href="private.html">Reserve →</a>

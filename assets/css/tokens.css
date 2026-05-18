@@ -1,34 +1,4 @@
-:root {
-  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
-  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
-  --ease-elegant: cubic-bezier(0.4, 0, 0.2, 1);
-
-  --dur-press: 140ms;
-  --dur-tooltip: 160ms;
-  --dur-popover: 200ms;
-  --dur-modal: 260ms;
-
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
-
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 24px;
-  --space-6: 32px;
-  --space-7: 48px;
-  --space-8: 64px;
-  --space-9: 96px;
-
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter,
-    Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, P052, Georgia,
-    serif;
-  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-}
+/* ── Shared base reset only. Per-page CSS owns fonts, color, type. ── */
 
 *,
 *::before,
@@ -43,7 +13,6 @@ body {
 }
 
 body {
-  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -71,5 +40,27 @@ img {
 :focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
-  border-radius: 4px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: currentColor;
+  color: #fff;
+}
+
+/* Custom easings (Emil) */
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-elegant: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }
