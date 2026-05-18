@@ -148,23 +148,21 @@
 }
 
 .gateway__card--private {
-  background:
-    radial-gradient(400px 200px at 80% 0%, rgba(201, 169, 97, 0.18) 0%, transparent 70%),
-    linear-gradient(180deg, #0f0d14 0%, #07060a 100%);
-  border: 1px solid rgba(201, 169, 97, 0.25);
-  color: #f3eee3;
+  background: linear-gradient(180deg, #faf8f3 0%, #f0ebe0 100%);
+  border: 1px solid rgba(125, 100, 72, 0.18);
+  color: #1c1b18;
   box-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.04) inset,
-    0 20px 40px -20px rgba(0, 0, 0, 0.6);
+    0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 14px 36px -22px rgba(125, 100, 72, 0.35);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .gateway__card--private:hover {
     transform: translateY(-2px);
-    border-color: rgba(201, 169, 97, 0.45);
+    border-color: rgba(125, 100, 72, 0.35);
     box-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.06) inset,
-      0 30px 60px -24px rgba(0, 0, 0, 0.7);
+      0 1px 0 rgba(255, 255, 255, 0.6) inset,
+      0 28px 56px -24px rgba(125, 100, 72, 0.4);
   }
 }
 
@@ -176,7 +174,7 @@
 }
 
 .gateway__card--private .gateway__card__tag {
-  color: #c9a961;
+  color: #7d6448;
 }
 
 .gateway__card__title {
@@ -201,7 +199,7 @@
 }
 
 .gateway__card--private .gateway__card__desc {
-  color: #a8a294;
+  color: #56524b;
 }
 
 .gateway__card__cta {
@@ -218,7 +216,7 @@
 }
 
 .gateway__card--private .gateway__card__cta {
-  color: #c9a961;
+  color: #7d6448;
 }
 
 .gateway__card__arrow {
