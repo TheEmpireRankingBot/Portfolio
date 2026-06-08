@@ -22,7 +22,9 @@ _SAMPLE_DIR = os.path.join(os.path.dirname(__file__), os.pardir, "sample_data")
 
 # Flipped to True the first time a live fetch fails. The UI reads this to show
 # a "demo mode" banner. It starts False and we discover the truth lazily.
-DEMO_MODE = False
+# Set PORTFOLIO_ADVISOR_DEMO=1 to force demo mode up front (instant, no network)
+# — handy offline or in a sandbox where market hosts are blocked.
+DEMO_MODE = os.environ.get("PORTFOLIO_ADVISOR_DEMO", "").lower() in ("1", "true", "yes")
 
 MARKET_TICKER = "SPY"  # used as the market benchmark for beta
 
