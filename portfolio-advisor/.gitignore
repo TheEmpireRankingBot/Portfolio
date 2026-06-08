@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Secrets & local data
+.env
+data/portfolio.json
+
+# OS
+.DS_Store
