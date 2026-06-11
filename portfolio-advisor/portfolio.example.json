@@ -1,0 +1,10 @@
+{
+  "base_currency": "USD",
+  "holdings": [
+    { "ticker": "AAPL",  "shares": 12,  "avg_price": 165.0,  "buy_date": "2024-02-10", "asset_type": "stock" },
+    { "ticker": "NVDA",  "shares": 25,  "avg_price": 95.0,   "buy_date": "2024-03-01", "asset_type": "stock" },
+    { "ticker": "TSLA",  "shares": 8,   "avg_price": 240.0,  "buy_date": "2024-05-20", "asset_type": "stock" },
+    { "ticker": "VOO",   "shares": 4,   "avg_price": 480.0,  "buy_date": "2024-01-05", "asset_type": "etf" },
+    { "ticker": "BTC-USD", "shares": 0.15, "avg_price": 62000.0, "buy_date": "2024-04-12", "asset_type": "crypto" }
+  ]
+}
