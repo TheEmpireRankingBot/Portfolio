@@ -15,6 +15,7 @@ English, surfaces recent good/bad news, and teaches you the concepts as you go.
 | Feature | What you get |
 |---|---|
 | **📊 Dashboard** | Total value, cost basis, profit/loss, and allocation pies by holding and by sector. |
+| **⬛ Terminal** | A Bloomberg-style command line: `AAPL` quote · `AAPL H` chart · `AAPL N` news · `AAPL F` financials · `BTC` crypto · `MACRO CPI` economics · `PORT` blotter. Neon-on-black retro UI. |
 | **💼 My Holdings** | Add / edit / remove positions. Saved locally to `data/portfolio.json`. |
 | **🎲 Risk & Discipline** | A **0–100 Discipline Score** — the core "gambling vs calculated risk" gauge — with every point deduction explained and a fix for each. |
 | **🔍 Weaknesses** | A health-check (diversification, concentration, sector balance, volatility, stock-vs-fund mix) that teaches each concept. |
@@ -82,7 +83,8 @@ illustrative numbers.
 ```
 app.py                 Streamlit UI (one function per tab)
 advisor/
-  data_fetch.py        yfinance live data + offline sample fallback
+  data_fetch.py        market data: Finnhub/Stooq/CoinGecko/FRED + sample fallback
+  terminal.py          Bloomberg-style command-line terminal page
   metrics.py           returns, volatility, beta, drawdown, HHI, allocations
   risk_score.py        the 0-100 Discipline Score + explained red flags
   weaknesses.py        teaching health-check findings
@@ -90,8 +92,22 @@ advisor/
   education.py         glossary (tooltips) + lessons
   ai_coach.py          optional Claude coaching, rules fallback
 sample_data/           demo quotes & news for offline mode
-tests/                 pytest unit tests (metrics + risk score)
+tests/                 pytest unit tests (metrics, risk score, terminal parser)
 ```
+
+## Data sources & API keys
+
+| Source | Used for | Key |
+|---|---|---|
+| Finnhub | stock/ETF quotes, news, fundamentals | `FINNHUB_API_KEY` (free) |
+| Stooq | daily price history | none |
+| CoinGecko | crypto quotes, history, stats | none |
+| FRED (St. Louis Fed) | macro series (`MACRO CPI`, `MACRO GDP`, …) | none |
+| Alpha Vantage | extra news incl. crypto (optional) | `ALPHAVANTAGE_API_KEY` (free) |
+| Anthropic | AI Coach (optional) | `ANTHROPIC_API_KEY` |
+
+On Streamlit Cloud, put keys under *Settings → Secrets* in TOML form, e.g.
+`FINNHUB_API_KEY = "..."`.
 
 ## Running the tests
 
@@ -102,4 +118,4 @@ pytest -q
 
 ## Tech
 
-Python · Streamlit · yfinance · pandas/numpy · Plotly · vaderSentiment · Anthropic (optional)
+Python · Streamlit · pandas/numpy · Plotly · Finnhub/Stooq/CoinGecko/FRED · vaderSentiment · Anthropic (optional)
